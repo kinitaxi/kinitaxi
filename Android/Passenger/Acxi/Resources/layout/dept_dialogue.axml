@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Dept Alert"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/txtdept"
+            android:text="You have an oustanding payment"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="25dp" />
+        <Button
+            android:text="Proceed"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnproceed_debt" />
+    </LinearLayout>
+</LinearLayout>

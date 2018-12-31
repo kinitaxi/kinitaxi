@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="10dp"
+    android:minWidth="300dp"
+    android:theme="@style/AcxiTheme1"
+    android:minHeight="420dp"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_height="0dp"
+      android:layout_width="match_parent"
+      android:layout_weight="0.3">
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/acxi_primary_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="Finding a nearby driver"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textColor="@color/acxi_defaulttext"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:layout_below="@+id/loading_spinner"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp" />
+  </RelativeLayout>
+  <LinearLayout
+      android:layout_height="0dp"
+      android:layout_width="match_parent"
+      android:orientation="vertical"
+      android:layout_weight="0.5">
+    <TextView
+        android:text="Your KiniTaxi fare is"
+        android:textColor="@color/acxi_defaulttext"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="bottom|center"
+        android:layout_gravity="center" />
+    <TextView
+        android:id="@+id/txtamount_requestingfrag"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="top|center"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="₦4,000"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textColor="@color/acxi_dark"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"
+        android:layout_gravity="center"
+        android:gravity="top|center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/acxi_defaulttext"
+        android:text="Your fares may change based on the number stops you make and the duration of the trip" />
+  </LinearLayout>
+  <RelativeLayout
+      android:layout_height="0dp"
+      android:layout_width="match_parent"
+      android:layout_weight="0.2">
+    <Button
+        android:id="@+id/btnCancel_requestingfrag"
+        android:layout_height="45dp"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:textColor="@color/acxi_white"
+        android:background="@drawable/acxibigbutton"
+        android:layout_centerInParent="true"
+        android:text="Cancel" />
+  </RelativeLayout>
+</LinearLayout>

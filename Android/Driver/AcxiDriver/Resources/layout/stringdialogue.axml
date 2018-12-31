@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:minWidth="200dp"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/txtDialog_header"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="Select bank"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+    <ListView
+        android:divider="#fff"
+        android:id="@+id/Listview1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

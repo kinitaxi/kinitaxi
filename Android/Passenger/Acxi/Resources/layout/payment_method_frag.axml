@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/paymentbottomsheet_view"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+    <FrameLayout
+        android:paddingBottom="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="Payment Method"
+                android:textSize="18sp"
+                android:textColor="@color/acxi_dark"
+                fontPath="Fonts/Lato-Bold.ttf"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="15dp" />
+            <LinearLayout
+                android:layout_height="25dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_height="25dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.07">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_credit_card_black_48dp"
+                        android:tint="@color/acxi_orange"
+                        android:layout_gravity="left"
+                        android:padding="1dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtcard_paymentfrag"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textColor="@color/acxi_dark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.55"
+                    android:text="Card" />
+                <RadioButton
+                    android:theme="@style/checkbox_theme"
+                    android:id="@+id/radio_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_height="25dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.07">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_credit_card_black_48dp"
+                        android:tint="@color/acxi_orange"
+                        android:layout_gravity="left"
+                        android:padding="1dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtwallet_paymentfrag"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:textColor="@color/acxi_dark"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.55"
+                    android:text="Wallet" />
+                <RadioButton
+                    android:theme="@style/checkbox_theme"
+                    android:id="@+id/radio_wallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:enabled="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="25dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_height="25dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.07">
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:layout_width="25dp"
+                        android:src="@mipmap/ic_monetization_on"
+                        android:layout_gravity="left" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txtcash_paymentfrag"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/acxi_dark"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.55"
+                    android:text="Cash" />
+                <RadioButton
+                    android:id="@+id/radio_cash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/checkbox_theme"
+                    android:checked="true"
+                    android:text="" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnproceed_paymentfrag"
+                android:textAllCaps="false"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:text="Proceed"
+                android:background="@drawable/acxibigbutton"
+                android:layout_marginTop="15dp"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

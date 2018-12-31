@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="160dp"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary">
+        <TextView
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_above="@+id/txttotalearnings"
+            android:layout_width="match_parent"
+            android:text="Total Earnings" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/txttotalearnings"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_width="match_parent"
+            android:text="₦0.0" />
+    </RelativeLayout>
+<!--Balance-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <ImageView
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:tint="@color/acxi_iconash"
+            android:src="@mipmap/ic_payment_black_48dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Balance"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+        <TextView
+            android:id="@+id/txtbalance"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:text="₦0.0"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+<!--Pending Withrawal-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <ImageView
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:tint="@color/acxi_iconash"
+            android:src="@mipmap/ic_payment_black_48dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Pending Withdrawal"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+        <TextView
+            android:id="@+id/txtpending_withdrawal"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:text="₦0.0"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/laytrips"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:layout_width="match_parent">
+        <ImageView
+            android:padding="15dp"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:tint="@color/acxi_iconash"
+            android:src="@mipmap/ic_directions_car_black_48dp" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Trips"
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.5" />
+        <TextView
+            android:id="@+id/txttripcount"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:padding="15dp"
+            android:textColor="?attr/colorAccent"
+            android:gravity="right"
+            android:layout_gravity="center"
+            android:text="0"
+            android:layout_weight="0.3" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="The balance is the amount to be payed out to you."
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.5" />
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.5">
+            <Button
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:layout_height="45dp"
+                android:background="@drawable/acxibuttonwhite"
+                android:id="@+id/btnwithdraw"
+                android:textColor="#18273D"
+                android:text="Withdraw"
+                android:layout_alignParentBottom="false"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

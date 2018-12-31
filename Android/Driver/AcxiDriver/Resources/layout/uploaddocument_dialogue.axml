@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="5dp"
+    android:minWidth="300dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txtheader_documentupload"
+        android:text="Drivers License"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:text="Note"
+            fontPath="Fonts/Lato-Bold.ttf"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtbody_documentupload"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="To ensure that your documents are accepted please take note of the following,\n1. Ensure that information on the document is readable. \n2. Ensure that all corners of the document is visible; \n3. Ensure that your document is valid and has not expired;  \n4. Ensure that the name on your license exactly matches your ACXI registered name" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/txttake_documentupload"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                fontPath="Fonts/Lato-Bold.ttf"
+                android:textColor="@color/acxi_primary_blue"
+                android:text="TAKE A PHOTO"
+                android:layout_centerInParent="true" />
+            <View
+                android:layout_height="match_parent"
+                android:layout_width="1dp"
+                android:layout_alignParentRight="true"
+                android:background="@color/acxi_ash" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:id="@+id/txtupload_documentupload"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                fontPath="Fonts/Lato-Bold.ttf"
+                android:layout_width="match_parent"
+                android:textColor="@color/acxi_primary_blue"
+                android:text="UPLOAD PICTURE"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

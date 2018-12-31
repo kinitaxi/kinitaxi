@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tripsdetailToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:id="@+id/layoutcover_history_detail"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView
+                android:textSize="20sp"
+                android:text="Unable to load history"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+<!--LOCATIONS SECION-->
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingTop="25dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_height="20dp"
+                android:layout_width="match_parent"
+                android:clickable="true">
+                <ImageView
+                    android:layout_height="8dp"
+                    android:layout_width="8dp"
+                    android:src="@drawable/greenball"
+                    android:layout_gravity="center|left"
+                    android:elevation="4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:id="@+id/txtlocation_tripdetails"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="44 marina street, CMS"
+                    android:layout_centerInParent="false"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:textColor="@color/acxi_dark" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_destination_main"
+                android:layout_height="20dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_height="8dp"
+                    android:layout_width="8dp"
+                    android:src="@drawable/redball"
+                    android:elevation="4dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+                <TextView
+                    android:id="@+id/txtdestination_tripdetails"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerInParent="false"
+                    android:text="Peninsula Resort, Lekki Epe Road"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28dp"
+                    android:textColor="@color/acxi_dark" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="September 30, 2017. 10:17"
+                android:textSize="12sp"
+                android:id="@+id/txttimestamp_tripdetails" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:textSize="12sp"
+                android:text="Cash"
+                android:id="@+id/txtpayment_tripdetails" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Completed"
+                android:textColor="@color/acxi_green"
+                android:id="@+id/txttripstatus_tripdetails" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="right"
+                android:text="₦3200.00"
+                android:textColor="@color/acxi_primary_blue"
+                android:id="@+id/txtfare_tripdetails" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+<!--YOUR DRIVER SECTION-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:text="Your driver"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/acxi_dark" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.25">
+                <refractored.controls.CircleImageView
+                    android:id="@+id/imgdriver_historydetail"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/account"
+                    android:layout_centerInParent="true"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+        <!--Driver Details, name, car and rating-->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:paddingLeft="4dp"
+                android:layout_weight="0.6">
+                <TextView
+                    android:layout_marginTop="6dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:textSize="16sp"
+                    fontPath="Fonts/Lato-Bold.ttf"
+                    android:text="Adebayo"
+                    android:id="@+id/txtdrivername_tripdetails" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Red - Toyota Avensis 2007"
+                    android:id="@+id/txtcarmodel_tripdetails" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="LSG - 1465BG"
+                    android:id="@+id/txtplatenumber_tripdetails" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+<!--FEEDBACK SECTION-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:text="Your Feedback"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/acxi_dark" />
+    <!--STARS-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:tint="@color/acxi_darkash"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star1_tripdetails" />
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star2_tripdetails" />
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star3_tripdetails" />
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star4_tripdetails" />
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star5_tripdetails" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:maxLines="4"
+            android:text="Hey it was a wonderful trip, i really enjoyed the conversation with the driver. thanks to  acxi"
+            android:id="@+id/txtfeedback_tripdetails" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="25dp"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnreport_tripdetails"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:text="Report a problem"
+            android:background="@drawable/acxibigbutton"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/btnresend_tripdetails"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="45dp"
+            android:layout_gravity="bottom"
+            android:text="Resend receipt"
+            android:background="@drawable/acxibigbutton"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

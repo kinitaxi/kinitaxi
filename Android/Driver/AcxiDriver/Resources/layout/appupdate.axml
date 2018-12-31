@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="App Update"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <!--Card Number-->
+        <TextView
+            android:text="Your app requires an important update. Please press the button below to update"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="18sp" />
+        <Button
+            android:text="Update"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnupdateapp" />
+    </LinearLayout>
+</LinearLayout>

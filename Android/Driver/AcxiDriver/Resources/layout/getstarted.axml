@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:background="@color/acxi_ash">
+        <ImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/kini3"
+            android:layout_centerInParent="true"
+            android:scaleType="fitXY" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <!--INPUT SECTION-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:theme="@style/AcxiText1">
+                <EditText
+                    android:text="+234"
+                    android:editable="false"
+                    android:hint="Prefix"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayoutphone_getstarted"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AcxiText1">
+                <EditText
+                    android:id="@+id/txtphone_getstarted"
+                    android:hint="Phone"
+                    android:textSize="18sp"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <TextView
+            android:text="You'll receive an SMS to verify your phone number"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/acxi_dark"
+            android:layout_width="match_parent" />
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button
+                android:id="@+id/btngetstarted"
+                android:layout_marginTop="5dp"
+                android:layout_height="45dp"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/acxibigbutton"
+                android:text="Get started" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

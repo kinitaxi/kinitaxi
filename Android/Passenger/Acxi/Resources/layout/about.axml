@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/aboutToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView2">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tableLayout2"
+            android:stretchColumns="1">
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.28"
+                    android:background="?attr/colorPrimary">
+                    <ImageView
+                        android:layout_height="90dp"
+                        android:layout_width="90dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/kini" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="0.72"
+                    android:orientation="vertical"
+                    android:background="#fff">
+                <!--Terms and conditions-->
+                    <LinearLayout
+                        android:id="@+id/lay_about_terms"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="48dp"
+                            android:layout_width="48dp"
+                            android:src="@mipmap/ic_description_black_48dp"
+                            android:tint="@color/acxi_iconash"
+                            android:gravity="center"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Terms and conditions"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/acxi_ash" />
+                <!--Facebook-->
+                    <LinearLayout
+                        android:id="@+id/lay_about_facebook"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="48dp"
+                            android:layout_width="48dp"
+                            android:src="@drawable/facebook1"
+                            android:gravity="center"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Like us on Facebook"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/acxi_ash" />
+                <!--Twitter-->
+                    <LinearLayout
+                        android:id="@+id/lay_about_twitter"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="48dp"
+                            android:layout_width="48dp"
+                            android:src="@drawable/twitter1"
+                            android:gravity="center"
+                            android:padding="12dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Follow us on Twitter"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/acxi_ash" />
+                <!--Google Play-->
+                    <LinearLayout
+                        android:id="@+id/lay_about_rateus"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="wrap_content"
+                            android:layout_width="48dp"
+                            android:tint="@color/acxi_iconash"
+                            android:src="@drawable/gplaystore"
+                            android:gravity="center"
+                            android:padding="10dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Rate us on Google Play"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/acxi_ash" />
+                <!--Visit us-->
+                    <LinearLayout
+                        android:id="@+id/lay_aboutvisit"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="48dp"
+                            android:layout_width="48dp"
+                            android:src="@mipmap/ic_language_black_48dp"
+                            android:tint="@color/acxi_iconash"
+                            android:gravity="center"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Visit Kinitaxi.com"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                    <View
+                        android:layout_height="1dp"
+                        android:layout_width="match_parent"
+                        android:background="@color/acxi_ash" />
+                <!--Feedback-->
+                    <LinearLayout
+                        android:id="@+id/lay_aboutfeedback"
+                        android:layout_height="65dp"
+                        android:background="#fff"
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:clickable="true">
+                        <ImageView
+                            android:layout_height="48dp"
+                            android:layout_width="48dp"
+                            android:src="@mipmap/ic_feedback_black_48dp"
+                            android:tint="@color/acxi_iconash"
+                            android:gravity="center"
+                            android:padding="8dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Feedback and suggestions"
+                            android:layout_marginLeft="12dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

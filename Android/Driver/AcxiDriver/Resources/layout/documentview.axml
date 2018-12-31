@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/document_Toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/laylicense_document"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_height="50dp"
+            android:padding="16dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Driver's License"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.95" />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:src="@mipmap/ic_keyboard_arrow_right_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_lightash" />
+    <!--Terms and conditions-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/layworthiness_document"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_height="50dp"
+            android:padding="16dp"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Road Worthiness Certificate"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.95" />
+            <ImageView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.05"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_keyboard_arrow_right_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_lightash" />
+        <ImageView
+            android:id="@+id/imgdocumentview"
+            android:layout_margin="20dp"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+</LinearLayout>

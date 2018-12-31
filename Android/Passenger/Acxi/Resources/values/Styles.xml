@@ -1,0 +1,64 @@
+﻿<resources>
+
+  <style name="AcxiTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/kini_primary</item>
+    <item name="colorPrimaryDark">@color/kini_primarydark</item>
+    <item name="colorAccent">@color/kini_accent</item>
+  </style>
+
+  <style name="AcxiTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/kini_primary</item>
+    <item name="colorPrimaryDark">@color/kini_primarydark</item>
+    <item name="colorAccent">@color/kini_accent</item>
+  </style>
+
+  <style name="AcxiTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/acxi_primary_blue</item>
+    <item name="colorPrimaryDark">@color/acxi_dark_blue</item>
+    <item name="colorAccent">@color/acxi_orange</item>
+  </style>
+
+  <style name="AcxiTheme.ActionBar.Transparent" parent="AcxiTheme">
+    <item name="colorPrimary">@android:color/transparent</item>
+  </style>
+  <style name="AcxiTheme2.ActionBar.Transparent" parent="AcxiTheme">
+    <item name="colorPrimary">@android:color/transparent</item>
+  </style>
+
+  <style name="checkbox_theme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/acxi_primary_blue</item>
+    <item name="colorPrimaryDark">@color/acxi_primary_blue</item>
+    <item name="colorAccent">@color/acxi_primary_blue</item>
+  </style>
+
+
+  <style name="AcxiText" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/acxi_primary_blue</item>
+    <item name="colorPrimaryDark">@color/acxi_primary_blue</item>
+    <item name="colorAccent">@color/acxi_defaulttext</item>
+  </style>
+
+  <style name="AcxiText1" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/acxi_primary_blue</item>
+    <item name="colorPrimaryDark">@color/acxi_primary_blue</item>
+    <item name="colorAccent">@color/acxi_orange</item>
+  </style>
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <style name="NavigationDrawerStyle">
+    <item name="android:textSize">15sp</item>
+    <!-- text size in menu-->
+
+    <item name="colorPrimary">@color/kini_accent</item>
+    <item name="colorPrimaryDark">@color/kini_accent</item>
+    <item name="colorAccent">@color/kini_accent</item>
+    <!-- item size in menu-->
+  </style>
+
+</resources>
+
+

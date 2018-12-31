@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp">
+    <TextView
+        android:text="Support"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:clickable="true"
+        android:id="@+id/lay_newticket"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Create new ticket"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/lay_viewtickets"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="View tickets"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>

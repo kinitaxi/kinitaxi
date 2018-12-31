@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:theme="@style/AcxiTheme1"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtheader_otpdialogue"
+        android:text="Add Card"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/txtamount_otpdialogue"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="Please provide the OTP sent to your phone number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtotp_otpdialogue"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText">
+            <EditText
+                android:hint="OTP"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Finalize"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnfinish_otpdialogue" />
+    </LinearLayout>
+</LinearLayout>

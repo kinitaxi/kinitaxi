@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:background="#e2e2e2"
+        android:layout_width="fill_parent">
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment" />
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:minHeight="?attr/actionBarSize" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="70dp">
+        <!--FRAME LOCATIONS-->
+            <FrameLayout
+                android:id="@+id/framelocations"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/rounded">
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/layout_location_main"
+                        android:layout_height="0dp"
+                        android:layout_width="match_parent"
+                        android:clickable="true"
+                        android:layout_weight="0.5">
+                        <ImageView
+                            android:layout_height="8dp"
+                            android:layout_width="8dp"
+                            android:src="@drawable/greenball"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:elevation="4dp" />
+                        <TextView
+                            android:id="@+id/txtlocation_main"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:text="Pickup location"
+                            android:textColor="#000"
+                            android:layout_centerInParent="false"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="36dp"
+                            android:maxLines="2"
+                            android:layout_marginLeft="30dp" />
+                        <RadioButton
+                            android:id="@+id/radio_pickup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:checked="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true" />
+                        <View
+                            android:layout_height="1dp"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="end"
+                            android:background="@color/acxi_ash"
+                            android:layout_alignParentBottom="true" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/layout_destination_main"
+                        android:layout_height="0dp"
+                        android:layout_width="match_parent"
+                        android:clickable="true"
+                        android:layout_weight="0.5">
+                        <ImageView
+                            android:layout_height="8dp"
+                            android:layout_width="8dp"
+                            android:src="@drawable/redball"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:elevation="4dp" />
+                        <TextView
+                            android:id="@+id/txtdestination_main"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:textColor="#000"
+                            android:maxLines="2"
+                            android:layout_marginRight="36dp"
+                            android:layout_centerInParent="false"
+                            android:text="Set destination"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp" />
+                        <RadioButton
+                            android:id="@+id/radio_destination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+            <Button
+                android:id="@+id/btn_addmoredestination_main"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="29dp"
+                android:layout_gravity="center"
+                android:text="Make a stop"
+                android:drawableLeft="@mipmap/ic_action_add"
+                android:textSize="12sp"
+                android:background="@drawable/acxibigbutton"
+                android:textColor="#fff"
+                android:elevation="4dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/fragmentContainer_main"
+            android:background="#fff"
+            android:layout_height="450dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:visibility="visible"
+            android:translationY="450dp" />
+        <ImageView
+            android:id="@+id/imgcenter_marker"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/marker_green4" />
+        <RelativeLayout
+            android:id="@+id/btn_mylocation"
+            android:clickable="true"
+            android:layout_height="35dp"
+            android:layout_width="35dp"
+            android:background="@drawable/rounded"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center|right">
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:tint="@color/acxi_orange"
+                android:padding="5dp"
+                android:src="@mipmap/ic_my_location_black_48dp" />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/btn_favlocation_main"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:visibility="invisible"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/favlocation" />
+        <Button
+            android:id="@+id/btn_favlocation_round"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:paddingLeft="12dp"
+            android:paddingBottom="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="6dp"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:stateListAnimator="@null"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/ic_action_favwhite"
+            android:text="My favourite places"
+            android:background="@drawable/acxibuttonrounded"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="30dp" />
+    <!--android:background="@android:drawable/dialog_holo_light_frame"-->
+        <Button
+            android:id="@+id/btndone_onetrip_main"
+            android:textAllCaps="false"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:text="Done"
+            android:layout_centerInParent="true"
+            android:background="@drawable/acxibuttonrounded"
+            android:textColor="#fff"
+            android:elevation="2dp"
+            android:translationZ="2dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="30dp"
+            android:visibility="invisible" />
+    </FrameLayout>
+    <include
+        layout="@layout/payment_method_frag" />
+    <include
+        layout="@layout/requestacxi_frag" />
+    <include
+        layout="@layout/driverassigned_frag" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Bank details"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+    <!--Account Name-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutname_bank"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Account name"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Account Number-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutnumber_bank"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:inputType="number"
+                android:digits="0123456789"
+                android:hint="Account number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Account Number-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutbank_bank"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Select bank"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Account Bank-->
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/spinner_bank"
+            android:theme="@style/AcxiText1"
+            app:ms_baseColor="@color/acxi_dark"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Select bank"
+            app:ms_hint="Select bank"
+            android:visibility="gone"
+            app:ms_alignLabels="true" />
+        <Button
+            android:text="save details"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="45dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnsavebank" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_height="300dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <ImageView
+          android:id="@+id/img_regcompleted"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:src="@drawable/ic_checked" />
+        <TextView
+          android:id="@+id/txtbody_regcompleted"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:text="Registration is complete, You will  be  noified and  able to use  the app as soon as your account  verification is successful" />
+    </LinearLayout>
+    <Button
+        android:text="Crosscheck status"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:background="@drawable/acxibigbutton"
+        android:id="@+id/btnregcompleted"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+     android:theme="@style/AcxiTheme1"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Total Fares"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <TextView
+        android:id="@+id/txttotalfares"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="₦3,200"
+        android:textSize="26sp" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+    <!--Account Name-->
+    <!--Account Number-->
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Base fare:"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+            <TextView
+                android:id="@+id/txtbasefare"
+                android:text="₦300"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    <!--Account Bank-->
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Time:"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+            <TextView
+                android:id="@+id/txttimefare"
+                android:text="₦600"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Distance:"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+            <TextView
+                android:id="@+id/txtdistancefare"
+                android:text="₦1200"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:text="Stops:"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+            <TextView
+                android:id="@+id/txtstopfare"
+                android:text="₦500"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtotp_fares"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText">
+            <EditText
+                android:id="@+id/txtotp_fares"
+                android:hint="OTP"
+                android:inputType="number"
+                android:digits="0123456789"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:text="Pay"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="40dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnpay" />
+    </LinearLayout>
+</LinearLayout>

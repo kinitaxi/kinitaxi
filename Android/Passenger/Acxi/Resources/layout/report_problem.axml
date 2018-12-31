@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Report a problem"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:orientation="vertical">
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+      <LinearLayout
+         android:id="@+id/laylostitem_report"
+        android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:id="@+id/imgicon_wheretoitem"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_report_problem_black_48dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.9">
+                <TextView
+                    android:maxLines="1"
+                    android:text="Lost an item"
+                    android:id="@+id/txtaddress_wheretoitem"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+      <LinearLayout
+         android:id="@+id/layovercharged_report"
+        android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:id="@+id/imgicon_wheretoitem"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_report_problem_black_48dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.9">
+                <TextView
+                    android:maxLines="1"
+                    android:text="Overcharged for this ride"
+                    android:id="@+id/txtaddress_wheretoitem"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+      <LinearLayout
+         android:id="@+id/layroute_report"
+        android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_report_problem_black_48dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.9">
+                <TextView
+                    android:maxLines="1"
+                    android:text="Driver took a longer route"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+      <LinearLayout
+         android:id="@+id/laypromo_report"
+        android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:id="@+id/imgicon_wheretoitem"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_report_problem_black_48dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.9">
+                <TextView
+                    android:maxLines="1"
+                    android:text="Promo code issues"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+        <LinearLayout
+          android:id="@+id/layothers_report"
+          android:clickable="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="54dp">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.1"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_report_problem_black_48dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.9">
+                <TextView
+                    android:maxLines="1"
+                    android:text="Others"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:background="@color/acxi_ash"
+            android:layout_height="1dp"
+            android:layout_width="match_parent" />
+        <Button
+            android:text="Close"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"
+            android:layout_height="45dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnclose_report" />
+    </LinearLayout>
+</LinearLayout>

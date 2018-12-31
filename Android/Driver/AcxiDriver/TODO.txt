@@ -1,0 +1,4 @@
+﻿***
+SEND OVERALL EARNING, UNPAID_EARNINGS FROM APP_MAIN_ACTIVITY TO ENROUTEACTIVITY; - place in a value eventlistener to update values after a ride;
+
+KEEP APP OPEN WHEN ONLINE

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <group>
+
+    <item
+      android:id="@+id/nav_profile"
+      android:icon="@mipmap/ic_person_action"
+      android:title="Profile"/>
+
+    <item
+      android:id="@+id/nav_wallet"
+      android:icon="@mipmap/ic_wallet_action"
+      android:title="Payments"/>
+
+    <item
+      android:id="@+id/nav_trips"
+      android:icon="@mipmap/ic_history_action"
+      android:title="Your trips"/>
+
+    <item
+      android:id="@+id/nav_promo"
+      android:icon="@mipmap/ic_promo_orange"
+      android:checked="true"
+      android:title="Promo"/>
+
+    <item
+      android:id="@+id/nav_support"
+      android:icon="@mipmap/ic_support_action"
+      android:title="Help"/>
+
+    <item
+     android:id="@+id/nav_about"
+     android:icon="@mipmap/ic_help_action"
+     android:title="About"/>
+  </group>
+
+
+</menu>

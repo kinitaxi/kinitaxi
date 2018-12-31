@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:minWidth="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Personal Details"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:textSize="18sp" />
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <!--Phone-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtlayoutphone_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Phone number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--firstname-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutfirstname_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Firstname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--lastname-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutlastname_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Lastname"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Email address-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutemail_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+              android:inputType="textEmailAddress"
+                android:hint="Email address"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--City-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutcity_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="City"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Invite Code-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutinvite_reg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Invite code (optional)"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="Save profile"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="45dp"
+            android:textColor="#fff"
+            android:background="@drawable/acxibigbutton"
+            android:id="@+id/btnsavepersonal_reg"
+            android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</LinearLayout>

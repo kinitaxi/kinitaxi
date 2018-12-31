@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addcard_paymentToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.8">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtlayout_cardnum_addcard"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AcxiText">
+                <EditText
+                    android:id="@+id/txt_cardnum_addcard"
+                    android:hint="Card number"
+                    android:inputType="number"
+                    fontPath="Fonts/Lato-Regular.ttf"
+                    android:textSize="20sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtlayout_cardexp_addcard"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginRight="10dp"
+                    android:theme="@style/AcxiText">
+                    <EditText
+                        android:id="@+id/txt_cardexp_addcard"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:hint="Expiry Date"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtlayout_cardCVV_addcard"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="10dp"
+                    android:theme="@style/AcxiText">
+                    <EditText
+                        android:id="@+id/txt_cardCVV_addcard"
+                        android:hint="CVV"
+                        android:maxLength="3"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.2">
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Button
+                    android:id="@+id/btn_savecard_addcard"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:text="Save"
+                    android:layout_centerVertical="false"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/acxibigbutton"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

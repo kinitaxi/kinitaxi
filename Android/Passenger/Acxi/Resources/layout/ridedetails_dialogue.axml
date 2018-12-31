@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+                   android:theme="@style/AcxiTheme1"
+    android:minWidth="300dp"
+    android:minHeight="300dp"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Ride Details"
+        android:textSize="18sp"
+        android:textColor="@color/acxi_dark"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Estimated fare"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/txtestimated_ridedetails"
+                android:text="₦4,000"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:textColor="@color/acxi_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Arrival time"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/txtarrival_ridedetails"
+                android:text="25 mins"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:textColor="@color/acxi_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Distance"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/txtdistance_ridedetails"
+                android:text="9.2 km"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:textColor="@color/acxi_dark" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Payment method"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center" />
+            <TextView
+                android:id="@+id/txtpayment_ridedetails"
+                android:text="Cash"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_gravity="center"
+                android:textColor="@color/acxi_dark" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:text="Ride Locations"
+        android:textSize="18sp"
+        android:textColor="@color/acxi_dark"
+        fontPath="Fonts/Lato-Bold.ttf"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp" />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/layout_location_main"
+            android:layout_height="30dp"
+            android:layout_width="match_parent"
+            android:clickable="true">
+            <ImageView
+                android:layout_height="12dp"
+                android:layout_width="12dp"
+                android:src="@drawable/greenball"
+                android:layout_gravity="center|left"
+                android:elevation="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txtlocation_ridedetails"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Pickup location"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/acxi_dark"
+                android:minLines="1" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_destination_main"
+            android:layout_height="30dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_height="12dp"
+                android:layout_width="12dp"
+                android:src="@drawable/redball"
+                android:elevation="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true" />
+            <TextView
+                android:id="@+id/txtdestination_ridedetails"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="false"
+                android:text="Set destination"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/acxi_dark"
+                android:minLines="1" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnclose_ridedetails"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:textColor="@color/acxi_white"
+        android:background="@drawable/acxibigbutton"
+        android:text="Close" />
+</LinearLayout>

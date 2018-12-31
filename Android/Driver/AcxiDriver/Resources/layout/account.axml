@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView2">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/tableLayout2"
+            android:stretchColumns="1">
+        <!--Header Section-->
+            <RelativeLayout
+                android:layout_height="170dp"
+                android:layout_width="match_parent"
+                android:background="?attr/colorPrimary">
+                <refractored.controls.CircleImageView
+                    android:id="@+id/img_accountheader"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/account"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/txtname_accountheader"
+                    android:layout_below="@+id/img_accountheader"
+                    android:text="Folayemi" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorAccent"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:id="@+id/txtedit_accountImage"
+                    android:layout_below="@+id/txtname_accountheader"
+                    android:text="EDIT" />
+            </RelativeLayout>
+        <!--personal details-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/laypersonal_account"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_person_outline_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Personal details"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--Vehicle details-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/layvehicle_account"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_directions_car_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Vehicle details"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--Documents-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/laydocument_document"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_description_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Documents"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--Bank details-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/laybankdetails_account"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_payment_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Bank details"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--Support-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/laysupport_account"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_headset_mic_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Support"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--About-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/layabout_account"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_help_outline_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="About"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        <!--Logout-->
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/laylogout"
+                android:orientation="horizontal"
+                android:layout_height="60dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:padding="15dp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:tint="@color/acxi_iconash"
+                    android:src="@mipmap/ic_swap_horiz_black_48dp" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Logout"
+                    android:textSize="16dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6" />
+                <RelativeLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:padding="15dp"
+                    android:layout_weight="0.2">
+                    <ImageView
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:src="@mipmap/ic_keyboard_arrow_right"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:padding="4dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_width="match_parent"
+                android:background="@color/acxi_ash" />
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

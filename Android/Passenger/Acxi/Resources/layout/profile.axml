@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+<!--PROFILE IMAGE SECTION-->
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent">
+        <refractored.controls.CircleImageView
+            android:id="@+id/imgprofile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/account"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/acxi_ash" />
+    </RelativeLayout>
+<!--MAIN SECTION-->
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.60">
+        <RelativeLayout
+            android:layout_height="50dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:layout_height="30dp"
+                android:layout_width="30dp"
+                android:src="@drawable/flagng"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-40dp"
+                android:layout_alignLeft="@+id/txtphone_profile" />
+            <TextView
+                android:text="Not available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtphone_profile"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true" />
+            <View
+                android:id="@+id/view1"
+                android:background="@color/acxi_ash"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:theme="@style/AcxiText">
+                <EditText
+                    android:id="@+id/txtname_profile"
+                    android:hint="Fullname"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/AcxiText">
+                <EditText
+                    android:id="@+id/txtemail_profile"
+                    android:hint="Email address"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:text="Ride receipts will be sent to this mail"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_height="1dp"
+                android:background="@color/acxi_ash"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="20dp" />
+            <LinearLayout
+                android:id="@+id/btnhomeaddress_profile"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:tint="@color/acxi_darkash"
+                    android:layout_weight="0.1"
+                    android:src="@mipmap/ic_home_black_48dp" />
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Home"
+                        android:textSize="10sp"
+                        android:textColor="@color/acxi_darkash"
+                        android:layout_marginBottom="2dp" />
+                    <TextView
+                        android:id="@+id/txthomeaddress_profile"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:text="Not available"
+                        android:textColor="@color/acxi_dark" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/acxi_ash"
+                android:layout_width="match_parent" />
+            <LinearLayout
+                android:id="@+id/btnworkaddress_profile"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="0.1"
+                    android:tint="@color/acxi_darkash"
+                    android:src="@mipmap/ic_work_black_48dp"
+                    android:padding="4dp" />
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Work"
+                        android:textSize="10sp"
+                        android:textColor="@color/acxi_darkash"
+                        android:layout_marginBottom="2dp" />
+                    <TextView
+                        android:id="@+id/txtworkaddress_profile"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:maxLines="1"
+                        android:text="Not available"
+                        android:textColor="@color/acxi_dark" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_height="1dp"
+                android:background="@color/acxi_ash"
+                android:layout_width="match_parent"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+<!--FOOTER SECTION-->
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/btnplaces_profile"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Other saved places"
+            android:textColor="@color/acxi_linkblue" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/vehiclereg_Toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+    <!--Make-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtlayoutmake_vreg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Vehicle make"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--model-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutmodel_vreg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Vehicle model"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--year-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutyear_vreg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Build year"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Color-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutcolor_vreg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Color"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--Plate number-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtlayoutplatnumber_vreg"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Plate number"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--save-->
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button
+                android:text="Save details"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:background="@drawable/acxibigbutton"
+                android:id="@+id/btnsavevehicle_reg"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

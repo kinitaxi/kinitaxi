@@ -1,0 +1,47 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Support.V7.App;
+using Android.Views;
+using Android.Widget;
+using Calligraphy;
+
+namespace Acxi.Activities
+{
+    [Activity(Label = "FeedbackActivity", Theme = "@style/AcxiTheme1")]
+    public class FeedbackActivity : AppCompatActivity
+    {
+        Android.Support.V7.Widget.Toolbar mtoolbar;
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            CalligraphyConfig.InitDefault(new CalligraphyConfig.Builder()
+     .SetDefaultFontPath("Fonts/Lato-Regular.ttf")
+  .SetFontAttrId(Resource.Attribute.fontPath)
+  .Build());
+
+
+            SetContentView(Resource.Layout.feedback);
+
+            mtoolbar = (Android.Support.V7.Widget.Toolbar)FindViewById(Resource.Id.feedbackToolbar);
+            SetSupportActionBar(mtoolbar);
+            SupportActionBar.Title = "Feedback";
+
+            Android.Support.V7.App.ActionBar ab = SupportActionBar;
+            ab.SetDisplayHomeAsUpEnabled(true);
+            ab.SetHomeAsUpIndicator(Resource.Mipmap.ic_action_arrow_back);
+
+        }
+
+        protected override void AttachBaseContext(Android.Content.Context @base)
+        {
+            base.AttachBaseContext(CalligraphyContextWrapper.Wrap(@base));
+        }
+    }
+}

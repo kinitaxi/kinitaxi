@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tripsToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:text="Welcome Acxi Driver"
+            android:textSize="26sp"
+            android:gravity="center" />
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Go online"
+            android:id="@+id/btnonline" />
+        <TextView
+            android:text="Locations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textSize="20sp" />
+        <TextView
+            android:text="Longitude:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtlongitude"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:text="Latitude:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtlatitude"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Fire Longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfireLong"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Fire Latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfireLat"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="Customer Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtridername"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Customer Pickup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpickupaddress"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Customer Destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdestinationaddress"
+            android:textSize="18sp" />
+        <TextView
+            android:text="Customer phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtriderphone"
+            android:textSize="18sp" />
+        <Button
+            android:text="Accept Request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnaccept"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</LinearLayout>

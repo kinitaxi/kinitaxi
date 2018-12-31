@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/regtypeToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:background="#e2e2e2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+      <LinearLayout
+          android:id="@+id/lay_regdriver"
+        android:clickable="true"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"
+                    android:src="@drawable/icon_driver" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Driver"
+                    android:textSize="20sp"
+                    android:id="@+id/textView1" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Register with us as a driver if you have a car and also  you want to be the one receiving ride requests."
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+      <LinearLayout
+          android:id="@+id/lay_regpartner"
+        android:clickable="true"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"
+                    android:src="@drawable/icon_partner" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Partner"
+                    android:textSize="20sp"
+                    android:id="@+id/textView1" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Register with us as a partner if you don't have a car but intend to drive with Acxi."
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+          android:id="@+id/lay_regcarowner"
+          android:clickable="true"
+            android:layout_height="130dp"
+            android:background="@drawable/rounded"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_height="55dp"
+                android:layout_width="match_parent">
+                <ImageView
+                    android:layout_height="48dp"
+                    android:layout_width="48dp"
+                    android:src="@drawable/icon_carowner" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:text="Car owner"
+                    android:textSize="20sp"
+                    android:id="@+id/textView1" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="Register with us as a car owner. if you have a car and wants Axci to help you find a driver."
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

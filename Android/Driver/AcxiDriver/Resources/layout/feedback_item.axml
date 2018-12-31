@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="142dp">
+    <LinearLayout
+        android:layout_height="141dp"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtname_feedback"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:text="Kemi"
+            fontPath="Fonts/Lato-Bold.ttf" />
+        <TextView
+            android:textColor="@color/acxi_defaulttext"
+            android:id="@+id/txtdate_feedback"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="September"
+            android:textSize="11sp" />
+    <!--STARS-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:tint="@color/acxi_darkash"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star1_feedback" />
+            <ImageView
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star2_feedback" />
+            <ImageView
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star3_feedback" />
+            <ImageView
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star4_feedback" />
+            <ImageView
+                android:layout_height="15dp"
+                android:layout_width="15dp"
+                android:tint="@color/acxi_darkash"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/ic_star_border_black_48dp"
+                android:id="@+id/star5_feedback" />
+        </LinearLayout>
+        <TextView
+          android:id="@+id/txtfeed_feedback"
+            android:layout_height="wrap_content"
+          android:maxLines="3"
+            android:layout_width="match_parent"
+            android:text="It was a very nice ride. A good conversationalist. am impressed" />
+    </LinearLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/acxi_ash" />
+</LinearLayout>

@@ -1,0 +1,75 @@
+﻿<resources>
+
+  <style name="AcxiTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#18273D</item>
+    <item name="colorPrimaryDark">#080916</item>
+    <item name="colorAccent">#95989A</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <style name="AcxiTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#002E6A</item>
+    <item name="colorPrimaryDark">#002554</item>
+    <item name="colorAccent">#EE861F</item>
+    <item name="colorControlActivated">#EE861F</item>
+    <item name="android:textColor">#000</item>
+    <item name="colorSwitchThumbNormal">#e2e2e2</item>
+  </style>
+  
+  <style name="AcxiTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#0690C1</item>
+    <item name="colorPrimaryDark">#06749B</item>
+    <item name="colorAccent">#95989A</item>
+  </style>
+
+  <style name="bottomnavTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#EE861F</item>
+    <item name="colorPrimaryDark">#06749B</item>
+    <item name="colorAccent">#95989A</item>
+  </style>
+
+  <style name="AcxiTheme.ActionBar.Transparent" parent="AcxiTheme">
+    <item name="colorPrimary">@android:color/transparent</item>
+  </style>
+   <style name="AcxiTheme2.ActionBar.Transparent" parent="AcxiTheme">
+    <item name="colorPrimary">@android:color/transparent</item>
+  </style>
+  
+  <style name="checkbox_theme" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#0690C1</item>
+    <item name="colorPrimaryDark">#0690C1</item>
+    <item name="colorAccent">#0690C1</item>
+  </style>
+  
+
+  <style name="AcxiText" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#191919</item>
+    <item name="colorPrimaryDark">#191919</item>
+    <item name="colorAccent">#191919</item>
+        <item name="android:windowTranslucentStatus">true</item>
+
+  </style>
+
+  <style name="AcxiText1" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#F96332</item>
+    <item name="colorPrimaryDark">#F96332</item>
+    <item name="colorAccent">#F96332</item>
+  </style>
+
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+  
+  <style name="NavigationDrawerStyle">
+    <item name="android:textSize">15sp</item>
+    <!-- text size in menu-->
+    <item name="android:listPreferredItemHeightSmall">50dp</item>
+    <!-- item size in menu-->
+  </style>
+  
+</resources>
+
+

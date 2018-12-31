@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/registrationToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <!--Profile Picture-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/layprofilepix_reg"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_photo_camera_black_48dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Profile picture"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.6" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/imgcheckpicture_reg"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="18dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_check_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    <!--Personal Details-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/layprofiledetails_reg"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:padding="13dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_iconash"
+                android:src="@mipmap/ic_person_black_48dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Personal details"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.6" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/imgcheckpersonal_reg"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="18dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_check_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    <!--Vehicle Details-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/layvehicledetails_reg"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:tint="@color/acxi_iconash"
+                android:layout_weight="0.2"
+                android:src="@mipmap/ic_directions_car_black_48dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Vehicle details"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.6" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/imgcheckvehicle_reg"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="18dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_check_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    <!--Drivers License-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/laylicense_reg"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:tint="@color/acxi_iconash"
+                android:layout_weight="0.2"
+                android:src="@mipmap/ic_description_black_48dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Driver's license"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.6" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/imgchecklicense_reg"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="18dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_check_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    <!--Road Worthiness Cert.-->
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/layworthiness_reg"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:layout_width="match_parent">
+            <ImageView
+                android:padding="15dp"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:tint="@color/acxi_iconash"
+                android:layout_weight="0.2"
+                android:src="@mipmap/ic_description_black_48dp" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Road worthiness cert."
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.6" />
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/imgcheckworthiness_reg"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:padding="18dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_check_black_48dp" />
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="match_parent">
+            <Button
+                android:text="Complete registration"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:background="@drawable/acxibigbutton"
+                android:id="@+id/btncomplete_reg"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

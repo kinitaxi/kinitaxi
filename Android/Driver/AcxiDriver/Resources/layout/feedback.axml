@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f7f7f7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feedbackToolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/feedbackToolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:background="#fff"
+        android:visibility="gone"
+        android:id="@+id/feedbackrecycler" />
+    <RelativeLayout
+        android:id="@+id/lay_nofeedback"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:paddingTop="100dp"
+        android:visibility="visible"
+        android:paddingBottom="20dp"
+        android:layout_below="@+id/feedbackToolbar">
+        <ImageView
+            android:id="@+id/img_tripmoto"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:src="@drawable/feedback"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/txtfeedcheck"
+            fontPath="Fonts/Lato-Bold.ttf"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="You don't have any feeback yet !"
+            android:gravity="center"
+            android:visibility="visible"
+            android:textColor="@color/acxi_darkash"
+            android:textSize="20sp"
+            android:layout_below="@+id/img_tripmoto" />
+        <Button
+            android:id="@+id/btn_nofeedback"
+            android:layout_height="40dp"
+            android:layout_width="200dp"
+            android:background="@drawable/acxibuttonrounded"
+            android:text="Okay"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp" />
+    </RelativeLayout>
+</RelativeLayout>

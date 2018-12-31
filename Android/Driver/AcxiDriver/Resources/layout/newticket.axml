@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newticket_Toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp" />
+    <LinearLayout
+        android:padding="16dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Please provide as much information as possible" />
+    <!--Title-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/txttitle_support"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText1">
+            <EditText
+                android:hint="Title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+    <!--firstname-->
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/spinner_support"
+            android:theme="@style/AcxiText"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Select category"
+            app:ms_hint="Select category"
+            app:ms_alignLabels="true" />
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtmessage_support"
+            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:theme="@style/AcxiText">
+            <EditText
+                android:gravity="start"
+                android:hint="Message"
+                fontPath="Fonts/Lato-Regular.ttf"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent" />
+        </android.support.design.widget.TextInputLayout>
+        <RelativeLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <Button
+                android:text="Create ticket"
+                android:layout_width="match_parent"
+                android:textAllCaps="false"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:background="@drawable/acxibigbutton"
+                android:id="@+id/btnsend_support"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

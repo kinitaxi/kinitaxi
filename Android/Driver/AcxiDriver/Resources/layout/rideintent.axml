@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4">
+        <ImageView
+            android:id="@+id/imgnotify"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/kinilogo" />
+        <TextView
+            android:text="New ride request"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            fontPath="Fonts/Lato-Bold.ttf"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imgnotify"
+            android:textSize="22sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3">
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_green"
+                android:src="@mipmap/ic_location_on_black_48dp"
+                android:padding="12dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/txtnewride_notify_location"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="CMS Bus Stop Expressway 1, Lagos"
+                    android:layout_centerVertical="true"
+                    android:maxLines="2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+        <LinearLayout
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:tint="@color/acxi_red"
+                android:src="@mipmap/ic_location_on_black_48dp"
+                android:padding="12dp" />
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="0.8">
+                <TextView
+                    android:id="@+id/txtnewride_notify_destination"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Peninsula Resort Victoria Island Lekki, Lagos"
+                    android:layout_centerVertical="true"
+                    android:maxLines="2" />
+            </RelativeLayout>
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="25dp"
+        android:paddingTop="16dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btndecline_newride_notify"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginRight="5dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:text="Decline"
+            android:background="@drawable/acxibuttonred"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/btnaccept_newride_notify"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="5dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:text="Accept"
+            android:background="@drawable/acxibigbutton"
+            android:textColor="#fff" />
+    </LinearLayout>
+</LinearLayout>

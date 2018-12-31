@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/requestacxi_bottomsheet_view"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="215dp"
+    app:behavior_hideable="true"
+    android:theme="@style/AcxiTheme1"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+  <FrameLayout
+      android:paddingLeft="20dp"
+      android:paddingRight="20dp"
+      android:layout_height="fill_parent"
+      android:layout_width="fill_parent">
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+      <TextView
+          android:text="Ride Details"
+          android:textSize="18sp"
+          android:textColor="@color/acxi_dark"
+          fontPath="Fonts/Lato-Bold.ttf"
+          android:layout_height="wrap_content"
+          android:layout_width="match_parent"
+          android:gravity="center"
+          android:layout_marginTop="15dp"
+          android:layout_marginBottom="15dp" />
+      <LinearLayout
+          android:layout_height="25dp"
+          android:layout_width="match_parent"
+          android:orientation="horizontal">
+        <LinearLayout
+            android:layout_height="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.07">
+          <ImageView
+              android:layout_height="25dp"
+              android:layout_width="25dp"
+              android:src="@mipmap/ic_monetization_on"
+              android:layout_gravity="left" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/acxi_dark"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.55"
+            android:text="Estimated fare" />
+        <TextView
+            android:id="@+id/txt_Estimatedfares_RequestAcxi"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_weight="0.35"
+            android:text="₦2000 - 2500"
+            android:layout_gravity="center"
+            android:textColor="@color/acxi_linkblue" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_height="25dp"
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:orientation="horizontal">
+        <LinearLayout
+            android:layout_height="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.07">
+          <ImageView
+              android:layout_height="25dp"
+              android:layout_width="25dp"
+              android:src="@mipmap/ic_timer_black_48dp"
+              android:tint="@color/acxi_orange"
+              android:layout_gravity="left"
+              android:padding="1dp" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/acxi_dark"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.55"
+            android:text="Arrival time" />
+        <TextView
+            android:id="@+id/txt_Arrivaltime_RequestAcxi"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:textColor="@color/acxi_dark"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:text="25 Mins"
+            android:layout_gravity="center" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_height="25dp"
+          android:layout_marginTop="5dp"
+          android:layout_width="match_parent"
+          android:orientation="horizontal">
+        <LinearLayout
+            android:layout_height="25dp"
+            android:layout_width="0dp"
+            android:layout_weight="0.07">
+          <ImageView
+              android:layout_height="25dp"
+              android:layout_width="25dp"
+              android:padding="1dp"
+              android:src="@mipmap/ic_credit_card_black_48dp"
+              android:tint="@color/acxi_orange"
+              android:layout_gravity="left" />
+        </LinearLayout>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/acxi_dark"
+            android:layout_gravity="center"
+            android:layout_weight="0.55"
+            android:text="Payment method" />
+        <TextView
+            android:id="@+id/txt_Paymentmethod_RequestAcxi"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.35"
+            android:gravity="right"
+            android:text="Card"
+            android:textColor="@color/acxi_dark"
+            android:layout_gravity="center" />
+      </LinearLayout>
+      <Button
+          android:id="@+id/btn_requestacxi_requestfrag"
+          android:textAllCaps="false"
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_gravity="center"
+          android:text="Request KiniTaxi"
+          android:background="@drawable/acxibigbutton"
+          android:layout_marginTop="15dp"
+          android:textColor="#fff" />
+    </LinearLayout>
+  </FrameLayout>
+</LinearLayout>

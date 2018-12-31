@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+                   android:theme="@style/AcxiTheme1"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent">
+        <refractored.controls.CircleImageView
+            android:id="@+id/img_driverprofile"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/account"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txtname_driverprofile"
+            fontPath="Fonts/Lato-Bold.ttf"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Adebayo Moshood"
+            android:gravity="center"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:id="@+id/txtcarmodel_driverprofile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Red - Toyota Avensis 2009"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:id="@+id/txtplatenumber_driverprofile"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="ABJ-1231BJ"
+            android:gravity="center"
+            android:layout_marginTop="5dp" />
+    <!--STATS DEATAILS SECTION-->
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3">
+                <TextView
+                    android:id="@+id/txtrides_driverprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="63" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Rides" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3">
+                <TextView
+                    android:id="@+id/txtrating_driverprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="4.3" />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Rating" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.3">
+                <TextView
+                    android:id="@+id/txtagenumber_driverprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="3" />
+                <TextView
+                    android:id="@+id/txtagetype_driverprofile"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:text="Months" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="@color/acxi_ash" />
+    <!--LANGUAGE AND LOCATION-->
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="left|center"
+                android:src="@mipmap/ic_language_black_48dp"
+                android:tint="@color/acxi_darkash" />
+            <TextView
+                android:id="@+id/txtlanguage_driverprofile"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Language - English" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:padding="4dp"
+                android:layout_gravity="left|center"
+                android:src="@mipmap/ic_location_on_black_48dp"
+                android:tint="@color/acxi_darkash" />
+            <TextView
+                android:id="@+id/txtlocation_driverprofile"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Location - Nigeria" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

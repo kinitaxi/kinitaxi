@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="79dp">
+        <ImageView
+            android:id="@+id/imgicon_placeitem"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.10"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"
+            android:tint="@color/acxi_iconash"
+            android:src="@mipmap/ic_location_on_black_48dp" />
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical">
+            <TextView
+                android:text="Home"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/acxi_defaulttext"
+                android:id="@+id/txttitle_placeitem"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+            <TextView
+                android:text="Peninsula Resort Victoria island, Lagos Nigeria"
+                android:id="@+id/txtaddress_placeitem"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/imgdelete_placeitem"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_delete_black_48dp"
+            android:layout_width="0dp"
+            android:tint="@color/acxi_iconash"
+            android:layout_weight="0.10" />
+    </LinearLayout>
+    <View
+        android:background="@color/acxi_ash"
+        android:layout_height="1dp"
+        android:layout_width="match_parent" />
+</LinearLayout>
